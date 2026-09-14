@@ -1,5 +1,6 @@
 import { SiteNav } from "@/components/site-nav"
 import { Hero } from "@/components/hero"
+import { ToolsMarquee } from "@/components/tools-marquee"
 import { Tools } from "@/components/tools"
 import { Process } from "@/components/process"
 import { Services } from "@/components/services"
@@ -13,6 +14,7 @@ export default function Page() {
       <SiteNav />
       <main>
         <Hero />
+        <ToolsMarquee />
         <Tools />
         <Process />
         <Services />

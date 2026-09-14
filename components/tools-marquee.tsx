@@ -17,7 +17,6 @@ const TOOLS = [
   "Xero",
   "Square",
   "Shopify",
-  "Kaya mo naman pala eh, pero bakit pagdating sa 'kin hirap na hirap ka?",
 ]
 
 export function ToolsMarquee() {

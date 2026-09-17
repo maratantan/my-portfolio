@@ -1,0 +1,8 @@
+[33m432a585[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Added and changed the icon
+[33m06b7507[m Merge pull request #3 from maratantan/revert-2-v0/automation-tools-marquee-e683e7f8
+[33m4fbe5d5[m[33m ([m[1;31morigin/revert-2-v0/automation-tools-marquee-e683e7f8[m[33m)[m Revert "Add scrolling tools marquee to the landing page"
+[33m367b9b7[m Merge pull request #2 from maratantan/v0/automation-tools-marquee-e683e7f8
+[33mb264086[m[33m ([m[1;31morigin/v0/automation-tools-marquee-e683e7f8[m[33m)[m feat: add new tool to marquee list
+[33md5c3f7f[m Merge pull request #1 from maratantan/v0/tools-marquee
+[33mea69a09[m[33m ([m[1;31morigin/v0/tools-marquee[m[33m)[m Add scrolling tools marquee below hero section
+[33m3b958cc[m Initial commit

@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/dark_jntgr8.svg',
+        url: '/dark_logo.svg',
         type: 'image/svg+xml',
       },
     ],

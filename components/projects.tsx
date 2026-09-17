@@ -21,7 +21,7 @@ const PROJECTS = [
     tag: "Data",
     title: "Cross-Stack Data Pipeline",
     client: "E-commerce · multi-brand",
-    image: "/projects/data-pipeline.png",
+    image: "/projects/SalesDataPipeline.png",
     problem:
       "Order, inventory, and marketing data lived in five disconnected tools and was reconciled by hand weekly.",
     solution:

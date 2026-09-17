@@ -31,7 +31,7 @@ export const metadata: Metadata = {
         media: '(prefers-color-scheme: dark)',
       },
       {
-        url: '/dark_logo.svg',
+        url: '/nobg_logo.svg',
         type: 'image/svg+xml',
       },
     ],

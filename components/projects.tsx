@@ -35,7 +35,7 @@ const PROJECTS = [
     tag: "Sales",
     title: "Autonomous Sales Agent",
     client: "Agency · outbound team",
-    image: "/projects/sales-agent.png",
+    image: "/projects/fbAgent.png",
     problem:
       "Reps spent hours researching leads and personalizing outreach instead of actually selling.",
     solution:

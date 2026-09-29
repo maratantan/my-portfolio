@@ -41,7 +41,7 @@ export function ToolsMarquee() {
                   src={`https://cdn.simpleicons.org/${tool.icon}`}
                   alt=""
                   aria-hidden="true"
-                  className="h-5 w-5 object-contain brightness-0 invert"
+                  className="h-5 w-5 object-contain brightness-0 invert dark:invert-0"
                 />
                 {tool.name}
                 <span aria-hidden className="text-background/40">

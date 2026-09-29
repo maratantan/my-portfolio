@@ -34,7 +34,7 @@ export function ToolsMarquee() {
           >
             {TOOLS.map((tool) => (
               <li
-                key={`${copy}-${tool}`}
+                key={`${copy}-${tool.name}`}
                 className="flex items-center gap-8 whitespace-nowrap px-8 py-4 font-mono text-sm font-bold uppercase tracking-widest md:text-base"
               >
                 <img

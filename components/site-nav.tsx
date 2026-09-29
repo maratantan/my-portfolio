@@ -40,7 +40,7 @@ export function SiteNav() {
           className="flex items-center gap-2 font-mono text-lg font-bold tracking-tight"
         >
           <img
-            src={dark ? "/nobg_light_logo.svg" : "/skull_cat.svg"}
+            src={dark ? "/skull_cat.svg" : "/nobg_logo.svg"}
             alt="Jntegrate logo"
             className="h-8 w-8 object-contain"
           />

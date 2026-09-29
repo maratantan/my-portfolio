@@ -1,7 +1,7 @@
 "use client"
 
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { useEffect, useState } from "react"
+import { Menu, Moon, Sun, X } from "lucide-react"
 
 const LINKS = [
   { label: "Tools", href: "#tools" },
@@ -13,6 +13,24 @@ const LINKS = [
 
 export function SiteNav() {
   const [open, setOpen] = useState(false)
+  const [dark, setDark] = useState(false)
+
+  useEffect(() => {
+    const isDark =
+      document.documentElement.classList.contains("dark") ||
+      (!document.documentElement.classList.contains("light") &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    document.documentElement.classList.toggle("dark", isDark)
+    document.documentElement.classList.toggle("light", !isDark)
+    setDark(isDark)
+  }, [])
+
+  function toggleTheme() {
+    const nextDark = !dark
+    document.documentElement.classList.toggle("dark", nextDark)
+    document.documentElement.classList.toggle("light", !nextDark)
+    setDark(nextDark)
+  }
 
   return (
     <header className="sticky top-0 z-50 border-b-2 border-foreground bg-background">
@@ -21,12 +39,14 @@ export function SiteNav() {
           href="#top"
           className="flex items-center gap-2 font-mono text-lg font-bold tracking-tight"
         >
-          <span
-            aria-hidden="true"
-            className="grid h-8 w-8 place-items-center border-2 border-foreground bg-foreground text-background shadow-brutal-sm"
-          >
-            J
-          </span>
+          <picture>
+            <source media="(prefers-color-scheme: dark)" srcSet="/nobg_light_logo.svg" />
+            <img
+              src={dark ? "/nobg_light_logo.svg" : "/nobg_logo.svg"}
+              alt="Jntegrate logo"
+              className="h-8 w-8 object-contain"
+            />
+          </picture>
           Jntegrate
         </a>
 
@@ -43,12 +63,22 @@ export function SiteNav() {
           ))}
         </ul>
 
-        <a
-          href="#contact"
-          className="hidden border-2 border-foreground bg-foreground px-4 py-2 font-mono text-sm font-bold uppercase text-background shadow-brutal-sm transition-transform hover:-translate-y-0.5 md:block"
-        >
-          Book a call
-        </a>
+        <div className="flex items-center gap-2">
+          <button
+            type="button"
+            onClick={toggleTheme}
+            className="grid h-10 w-10 place-items-center border-2 border-foreground bg-card shadow-brutal-sm transition-transform hover:-translate-y-0.5"
+            aria-label={`Switch to ${dark ? "light" : "dark"} mode`}
+          >
+            {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
+          </button>
+          <a
+            href="#contact"
+            className="hidden border-2 border-foreground bg-foreground px-4 py-2 font-mono text-sm font-bold uppercase text-background shadow-brutal-sm transition-transform hover:-translate-y-0.5 md:block"
+          >
+            Book a call
+          </a>
+        </div>
 
         <button
           type="button"

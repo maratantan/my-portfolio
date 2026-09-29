@@ -39,14 +39,11 @@ export function SiteNav() {
           href="#top"
           className="flex items-center gap-2 font-mono text-lg font-bold tracking-tight"
         >
-          <picture>
-            <source media="(prefers-color-scheme: dark)" srcSet="/nobg_light_logo.svg" />
-            <img
-              src={dark ? "/nobg_light_logo.svg" : "/nobg_logo.svg"}
-              alt="Jntegrate logo"
-              className="h-8 w-8 object-contain"
-            />
-          </picture>
+          <img
+            src={dark ? "/nobg_light_logo.svg" : "/nobg_logo.svg"}
+            alt="Jntegrate logo"
+            className="h-8 w-8 object-contain"
+          />
           Jntegrate
         </a>
 

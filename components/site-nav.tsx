@@ -44,7 +44,7 @@ export function SiteNav() {
             alt="Jntegrate logo"
             className="h-8 w-8 object-contain"
           />
-          Jntegrate
+          Jessa Caccam
         </a>
 
         <ul className="hidden items-center gap-1 md:flex">

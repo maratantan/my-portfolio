@@ -25,15 +25,15 @@ const STEPS = [
 
 export function Process() {
   return (
-    <section id="process" className="border-b-2 border-foreground bg-foreground text-background">
+    <section id="process" className="border-b-2 border-foreground bg-background text-foreground">
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
         <div className="mb-10 md:mb-14">
           <div className="flex items-baseline gap-3">
-            <span className="font-mono text-sm font-bold text-background/60">02 / Process</span>
+            <span className="font-mono text-sm font-bold text-foreground/60">02 / Process</span>
             <span className="h-0.5 flex-1 bg-background" aria-hidden="true" />
           </div>
           <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl">How it works</h2>
-          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-background/70 md:text-lg">
+          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-foreground/70 md:text-lg">
             A repeatable path from messy manual process to a dependable automated system.
           </p>
         </div>

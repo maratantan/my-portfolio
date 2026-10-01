@@ -2,8 +2,8 @@ import { ArrowDownRight, Zap } from "lucide-react"
 
 const STATS = [
   { value: "15+", label: "Workflows shipped" },
-  { value: "500+", label: "Hours automated / yr" },
-  { value: "10+", label: "Systems integrated" },
+  { value: "500+", label: "Hours saved" },
+  { value: "10+", label: "Business processes automated" },
 ]
 
 export function Hero() {
@@ -25,7 +25,7 @@ export function Hero() {
 
         <p className="mt-8 max-w-2xl text-balance text-lg leading-relaxed text-muted-foreground md:text-xl">
           {
-            "I'm Jntegrate — I design, build, and deploy AI automations that connect your tools, run your processes, and give your team back its time."
+            "I'm Jessa — I design, build, and deploy AI automations that connect your tools, run your processes, and give your team back its time."
           }
         </p>
 

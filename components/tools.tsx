@@ -3,19 +3,27 @@ import { SectionHeading } from "./section-heading"
 const GROUPS = [
   {
     label: "Automation",
-    items: ["n8n", "Make", "Zapier", "Temporal", "Cron"],
+    items: ["n8n", "Make.com", "Zapier", "Webhooks", "APIs"],
   },
   {
     label: "AI & LLMs",
-    items: ["OpenAI", "Anthropic", "LangChain", "AI SDK", "Pinecone"],
+    items: ["OpenAI", "Gemini", "Claude", "Perplexity", "AI Agents"],
   },
   {
-    label: "Data & Backend",
-    items: ["Python", "TypeScript", "Postgres", "Supabase", "Airtable"],
+    label: "CRM & Business",
+    items: ["HubSpot", "Airtable", "Asana", "Apollo", "Xero", "Square"],
   },
   {
-    label: "Deploy & Ops",
-    items: ["Vercel", "Docker", "GitHub Actions", "Sentry", "Webhooks"],
+    label: "Google Workspace",
+    items: ["Google Sheets", "Google Calendar", "Google Drive", "Google Forms", "Gmail"],
+  },
+  {
+    label: "Communication",
+    items: ["Slack", "Telegram", "WhatsApp", "Twilio", "Microsoft Teams"],
+  },
+  {
+    label: "Scheduling",
+    items: ["Calendly", "Google Calendar", "Cal.com"],
   },
 ]
 

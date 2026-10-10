@@ -1,32 +1,56 @@
-import { Workflow, Bot, Database, Wrench } from "lucide-react"
+import { Workflow, Bot, Settings, Users, MessageSquare, Plug, FileText, ChartNoAxesCombined } from "lucide-react"
 import { SectionHeading } from "./section-heading"
 
 const SERVICES = [
   {
     icon: Workflow,
-    title: "Workflow Automation",
-    body: "Multi-step business processes automated across your existing tools — approvals, reporting, onboarding, and everything in between.",
-    tags: ["n8n", "Make", "Webhooks"],
+    title: "AI Workflow Automation",
+    body: "Turn repetitive manual processes into automated workflows that save time, reduce errors, and keep your business running efficiently.",
+    tags: ["n8n", "Make", "Workflows"],
   },
   {
     icon: Bot,
-    title: "AI Agents & Chatbots",
-    body: "Autonomous agents and assistants that reason, call tools, and take action — support, sales, research, and internal ops.",
-    tags: ["LLMs", "RAG", "Tools"],
+    title: "AI Agents",
+    body: "Build AI-powered systems that reason, make decisions, and execute multi-step tasks with minimal human intervention.",
+    tags: ["LLMs", "Agents", "Tools"],
   },
   {
-    icon: Database,
-    title: "Data Pipelines & Integrations",
-    body: "Reliable syncs between your CRM, database, and SaaS stack — cleaned, enriched, and always up to date.",
-    tags: ["ETL", "APIs", "Postgres"],
+    icon: Settings,
+    title: "Business Process Automation",
+    body: "Connect your existing tools and eliminate repetitive administrative work to streamline day-to-day operations.",
+    tags: ["Process Design", "Integrations", "Automation"],
   },
   {
-    icon: Wrench,
-    title: "Custom LLM Tooling",
-    body: "Bespoke internal tools powered by language models — document processing, classification, and generation at scale.",
-    tags: ["AI SDK", "Prompts", "Evals"],
+    icon: Users,
+    title: "CRM & Lead Automation",
+    body: "Automatically capture, qualify, organize, and follow up with leads to keep your sales pipeline moving.",
+    tags: ["CRM", "Lead Scoring", "Follow-ups"],
   },
-]
+  {
+    icon: MessageSquare,
+    title: "AI Chatbots & Assistants",
+    body: "Create intelligent assistants for customer support, sales, and internal operations that deliver fast, consistent responses.",
+    tags: ["Chatbots", "RAG", "LLMs"],
+  },
+  {
+    icon: Plug,
+    title: "API & Tool Integration",
+    body: "Connect CRMs, forms, databases, communication tools, AI models, and other business software into one seamless ecosystem.",
+    tags: ["APIs", "Webhooks", "Integrations"],
+  },
+  {
+    icon: FileText,
+    title: "Document & Data Automation",
+    body: "Extract, transform, classify, and organize business information automatically for faster, more accurate processing.",
+    tags: ["Data Extraction", "ETL", "AI Processing"],
+  },
+  {
+    icon: ChartNoAxesCombined,
+    title: "Reporting & Monitoring",
+    body: "Turn scattered business data into automated reports, real-time alerts, and actionable insights for better decisions.",
+    tags: ["Analytics", "Dashboards", "Alerts"],
+  },
+];
 
 export function Services() {
   return (
@@ -35,7 +59,7 @@ export function Services() {
         <SectionHeading
           index="03 / Services"
           title="What I build"
-          description="Four ways I put AI to work — pick one or combine them into a full automation program."
+          description="Practical AI and automation solutions designed to streamline operations, eliminate repetitive work, and create systems that scale with the business."
         />
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">

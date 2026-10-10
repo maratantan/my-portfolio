@@ -45,7 +45,7 @@ export function Process() {
               className="border-2 border-background bg-foreground p-6 shadow-[6px_6px_0_0_var(--color-background)]"
             >
               <span className="font-mono text-4xl font-bold text-background">{s.step}</span>
-              <h3 className="mt-4 text-xl font-bold">{s.title}</h3>
+              <h3 className="mt-4 text-xl font-bold text-background">{s.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-background/70">{s.body}</p>
             </li>
           ))}

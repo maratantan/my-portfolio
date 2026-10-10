@@ -4,39 +4,34 @@ const STEPS = [
   {
     step: "01",
     title: "Discover",
-    body: "We map the manual work, the tools involved, and where hours leak. No automation before I understand the workflow.",
+    body: "Identify time-consuming tasks, disconnected tools, and costly inefficiencies to uncover where automation can make the biggest impact.",
   },
   {
     step: "02",
     title: "Design",
-    body: "I blueprint the system — triggers, logic, model prompts, and fallbacks — so you approve the flow before a line is built.",
+    body: "Develop a tailored automation strategy with clear workflows, intelligent decision-making, and reliable fallback plans before development begins.",
   },
   {
     step: "03",
     title: "Build",
-    body: "I implement the automation end to end, connecting APIs, LLMs, and databases with error handling and observability baked in.",
+    body: "Connect tools, APIs, AI models, and databases into seamless systems designed to handle repetitive tasks, reduce errors, and operate reliably.",
   },
   {
     step: "04",
     title: "Deploy & Optimize",
-    body: "We ship to production, watch the metrics, and tune. Automations get better as they run, not worse.",
+    body: "Launch automations with monitoring and performance tracking. Continuously refine each system to adapt to changing business needs and improve efficiency.",
   },
 ]
 
 export function Process() {
   return (
-    <section id="process" className="border-b-2 border-foreground bg-background text-foreground">
+    <section id="services" className="border-b-2 border-foreground">
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 md:py-24">
-        <div className="mb-10 md:mb-14">
-          <div className="flex items-baseline gap-3">
-            <span className="font-mono text-sm font-bold text-foreground/60">02 / Process</span>
-            <span className="h-0.5 flex-1 bg-foreground" aria-hidden="true" />
-          </div>
-          <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl">How it works</h2>
-          <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-foreground/70 md:text-lg">
-            A repeatable path from messy manual process to a dependable automated system.
-          </p>
-        </div>
+        <SectionHeading
+          index="02 / Process"
+          title="How it works"
+          description="A structured approach to automation that gives businesses more time to focus on growth."
+        />
 
         <ol className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {STEPS.map((s) => (

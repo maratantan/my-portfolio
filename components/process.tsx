@@ -4,22 +4,27 @@ const STEPS = [
   {
     step: "01",
     title: "Discover",
-    body: "We map the manual work, the tools involved, and where hours leak. No automation before I understand the workflow.",
+    body: "Analyze workflows, tools, and repetitive tasks to identify where time is being wasted and where AI automation can create the greatest impact.",
   },
   {
     step: "02",
-    title: "Design",
-    body: "I blueprint the system — triggers, logic, model prompts, and fallbacks — so you approve the flow before a line is built.",
+    title: "Strategize",
+    body: "Define what should be automated, what should remain human, and where AI fits in. Map the triggers, logic, integrations, prompts, and decision points.",
   },
   {
     step: "03",
     title: "Build",
-    body: "I implement the automation end to end, connecting APIs, LLMs, and databases with error handling and observability baked in.",
+    body: "Connect apps, APIs, AI models, and databases into a seamless workflow — with error handling, safeguards, and reliability built in from the start.",
   },
   {
     step: "04",
-    title: "Deploy & Optimize",
-    body: "We ship to production, watch the metrics, and tune. Automations get better as they run, not worse.",
+    title: "Test & Deploy",
+    body: "Test the system against real-world scenarios, edge cases, and failure points before deploying it into the actual workflow with confidence.",
+  },
+  {
+    step: "05",
+    title: "Optimize",
+    body: "Monitor performance, identify opportunities, and continuously fine-tune the system so it becomes smarter, faster, and more reliable over time.",
   },
 ]
 
@@ -34,7 +39,7 @@ export function Process() {
           </div>
           <h2 className="mt-4 text-4xl font-bold tracking-tight md:text-6xl">How it works</h2>
           <p className="mt-4 max-w-2xl text-pretty text-base leading-relaxed text-foreground/70 md:text-lg">
-            A repeatable path from messy manual process to a dependable automated system.
+            A structured process for turning repetitive work into reliable AI-powered automation — built around the business, not just the tools.
           </p>
         </div>
 
